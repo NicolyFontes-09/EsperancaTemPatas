@@ -1,0 +1,57 @@
+﻿@model SitePet.Models.Adocao
+
+@{
+    ViewData["Title"] = "Rejeitar Solicitação";
+}
+
+<div class="container mt-4 pagina-rejeitar-adocao">
+
+    <h1 class="mb-4">Rejeitar Solicitação de Adoção</h1>
+
+    <div class="card p-4">
+
+        <h4>Pet: @Model.NomePet</h4>
+        <p><strong>Adotante:</strong> @Model.NomeCompleto</p>
+
+        <hr />
+
+        <form asp-action="Rejeitar" method="post">
+
+            <input type="hidden" name="Id" value="@Model.Id" />
+
+            <div class="mb-3">
+
+                <label for="Justificativa" class="form-label">
+                    Justificativa da rejeição
+                </label>
+
+                <p class="text-muted">
+                    Explique o motivo da rejeição. Essa justificativa poderá ser consultada pelo solicitante.
+                </p>
+
+                <textarea id="Justificativa"
+                          name="Justificativa"
+                          class="form-control"
+                          rows="5"
+                          required
+                          maxlength="1000"></textarea>
+
+            </div>
+
+            <div class="d-flex gap-2">
+
+                <button type="submit" class="btn btn-danger">
+                    Confirmar Rejeição
+                </button>
+
+                <a asp-action="Pendencia" class="btn btn-secondary">
+                    Cancelar
+                </a>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

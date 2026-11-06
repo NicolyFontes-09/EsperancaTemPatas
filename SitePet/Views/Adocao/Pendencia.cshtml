@@ -1,0 +1,96 @@
+﻿@model List<SitePet.Models.Adocao>
+
+@{
+    ViewData["Title"] = "Solicitações de Adoção";
+}
+
+<div class="container mt-4 pagina-pendencias">
+
+    <h1 class="mb-4">Solicitações de Adoção</h1>
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="text-center mt-5">
+            <h4>Nenhuma solicitação encontrada.</h4>
+            <p>Quando alguém solicitar uma adoção, ela aparecerá aqui.</p>
+        </div>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped align-middle">
+
+            <thead>
+                <tr>
+                    <th>Pet</th>
+                    <th>Adotante</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var adocao in Model)
+                {
+                    <tr>
+                        <td>@adocao.NomePet</td>
+                        <td>@adocao.NomeCompleto</td>
+                        <td>@adocao.Email</td>
+                        <td>@adocao.Telefone</td>
+
+                        <td>
+                            @if (adocao.Status == "Pendente")
+                            {
+                                <span class="badge bg-warning text-dark">Pendente</span>
+                            }
+                            else if (adocao.Status == "Aprovada")
+                            {
+                                <span class="badge bg-success">Aprovada</span>
+                            }
+                            else if (adocao.Status == "Rejeitada")
+                            {
+                                <span class="badge bg-danger">Rejeitada</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">@adocao.Status</span>
+                            }
+                        </td>
+
+                        <td>
+                            <div class="d-flex gap-2">
+
+                                <a asp-action="Detalhes"
+                                   asp-route-id="@adocao.Id"
+                                   class="btn btn-primary btn-sm">
+                                    Detalhes
+                                </a>
+
+                                @if (adocao.Status == "Pendente")
+                                {
+                                    <form asp-action="Aprovar" method="post">
+                                        <input type="hidden" name="id" value="@adocao.Id" />
+
+                                        <button type="submit" class="btn btn-success btn-sm">
+                                            Aprovar
+                                        </button>
+                                    </form>
+
+                                    <a asp-action="Rejeitar"
+                                       asp-route-id="@adocao.Id"
+                                       class="btn btn-danger btn-sm">
+                                        Rejeitar
+                                    </a>
+                                }
+
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    }
+
+</div>

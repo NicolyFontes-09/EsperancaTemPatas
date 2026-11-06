@@ -1,0 +1,59 @@
+﻿
+@model List<SitePet.Models.Adocao>
+
+@{
+    ViewData["Title"] = "Minhas Adoções";
+}
+
+<div class="container mt-5 pagina-minhas-adocoes">
+
+    <div class="text-center mb-4">
+        <h1>Minhas Adoções</h1>
+        <p>Acompanhe o andamento das suas solicitações de adoção.</p>
+    </div>
+
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="text-center">
+            <p>Você ainda não possui solicitações de adoção.</p>
+
+            <a asp-controller="Home"
+               asp-action="QueroAdotar"
+               class="btn btn-quero-adotar">
+                Quero adotar
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="lista-minhas-adocoes">
+
+            @foreach (var adocao in Model)
+            {
+                <div class="cartao-minha-adocao">
+
+                    <h3>@adocao.NomePet</h3>
+
+                    <p>
+                        <strong>Status:</strong>
+
+                        <span class="status-adocao @adocao.Status.ToLower()">
+                            @adocao.Status
+                        </span>
+                    </p>
+
+                    @if (adocao.Status == "Rejeitada")
+                    {
+                        <p>
+                            <strong>Justificativa:</strong>
+                            @adocao.Justificativa
+                        </p>
+                    }
+
+                </div>
+            }
+
+        </div>
+    }
+
+</div>

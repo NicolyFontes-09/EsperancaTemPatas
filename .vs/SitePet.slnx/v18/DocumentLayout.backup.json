@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\controllers\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\controllers\\petcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\excluir.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\solicitacao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\solicitacao.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\rejeitar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\rejeitar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\pendencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\pendencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\gatos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\gatos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\pet\\cachorros.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\pet\\cachorros.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\formulario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\formulario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\minhasadocoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\minhasadocoes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\adocao\\termos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\adocao\\termos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\models\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\models\\tipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\models\\adocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\models\\adocao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\controllers\\adocaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\controllers\\adocaocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\home\\contato.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\home\\queroadotar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\home\\queroadotar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\home\\quemsomos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\home\\quemsomos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\data\\adocaomocados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\data\\adocaomocados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\data\\petmocados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\data\\petmocados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|c:\\users\\49198979876\\desktop\\projetofinalatual\\projetofinal\\aplica-o-mvc-espera-atempatas-main\\sitepet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CB77D6C3-D864-ED86-73DB-4F4C1CF4E5F0}|SitePet\\SitePet.csproj|solutionrelative:sitepet\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Rejeitar.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Rejeitar.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Rejeitar.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Rejeitar.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Rejeitar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:31:58.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Solicitacao.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Solicitacao.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Solicitacao.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Solicitacao.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Solicitacao.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:33:56.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Index.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Index.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Index.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:24:57.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PetController.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\PetController.cs",
+              "RelativeDocumentMoniker": "SitePet\\Controllers\\PetController.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\PetController.cs",
+              "RelativeToolTip": "SitePet\\Controllers\\PetController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAcwIYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T17:56:42.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Editar.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Editar.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Editar.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwGgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:28:46.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Detalhes.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Detalhes.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Detalhes.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Detalhes.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Detalhes.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:28:19.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadastrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Cadastrar.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Cadastrar.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Cadastrar.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Cadastrar.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:27:55.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Excluir.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Excluir.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Excluir.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Excluir.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Excluir.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:28:52.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Detalhes.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Detalhes.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Detalhes.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Detalhes.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Detalhes.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:23:39.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SitePet\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SitePet\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T17:56:48.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Pendencia.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Pendencia.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Pendencia.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Pendencia.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Pendencia.cshtml",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAmwCkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:12:23.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Gatos.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Gatos.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Gatos.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Gatos.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Gatos.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-22T12:13:14.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Cachorros.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Cachorros.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Pet\\Cachorros.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Pet\\Cachorros.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Pet\\Cachorros.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-22T12:50:59.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Formulario.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Formulario.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Formulario.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Formulario.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Formulario.cshtml",
+              "ViewState": "AgIAADsAAAAAAAAAAAAowKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:33:49.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MinhasAdocoes.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\MinhasAdocoes.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\MinhasAdocoes.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\MinhasAdocoes.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\MinhasAdocoes.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:59:53.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Termos.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Termos.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Adocao\\Termos.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Adocao\\Termos.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Adocao\\Termos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-30T13:57:42.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "SitePet\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "SitePet\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIwDAAAAAAAAAAAIwB8EAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-10-01T18:47:22.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAUwCQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:09:24.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Adocao.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Adocao.cs",
+              "RelativeDocumentMoniker": "SitePet\\Models\\Adocao.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Adocao.cs",
+              "RelativeToolTip": "SitePet\\Models\\Adocao.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAA0wCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T16:27:25.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tipo.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Tipo.cs",
+              "RelativeDocumentMoniker": "SitePet\\Models\\Tipo.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Tipo.cs",
+              "RelativeToolTip": "SitePet\\Models\\Tipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-06T10:38:43.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "SitePet\\Models\\Pet.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Models\\Pet.cs",
+              "RelativeToolTip": "SitePet\\Models\\Pet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-22T12:46:08.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdocaoController.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\AdocaoController.cs",
+              "RelativeDocumentMoniker": "SitePet\\Controllers\\AdocaoController.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Controllers\\AdocaoController.cs",
+              "RelativeToolTip": "SitePet\\Controllers\\AdocaoController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwG8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T17:56:56.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Contato.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Contato.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Home\\Contato.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Contato.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Home\\Contato.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-06T11:43:40.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "QueroAdotar.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\QueroAdotar.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Home\\QueroAdotar.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\QueroAdotar.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Home\\QueroAdotar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:36:54.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QuemSomos.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\QuemSomos.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Home\\QuemSomos.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\QuemSomos.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Home\\QuemSomos.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-16T16:36:53.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-22T12:44:24.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SitePet\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SitePet\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-01T18:19:53.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AdocaoMocados.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\AdocaoMocados.cs",
+              "RelativeDocumentMoniker": "SitePet\\Data\\AdocaoMocados.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\AdocaoMocados.cs",
+              "RelativeToolTip": "SitePet\\Data\\AdocaoMocados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T13:50:29.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SitePet\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SitePet\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T12:45:16.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PetMocados.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\PetMocados.cs",
+              "RelativeDocumentMoniker": "SitePet\\Data\\PetMocados.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Data\\PetMocados.cs",
+              "RelativeToolTip": "SitePet\\Data\\PetMocados.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T10:42:38.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Program.cs",
+              "RelativeDocumentMoniker": "SitePet\\Program.cs",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\Program.cs",
+              "RelativeToolTip": "SitePet\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T18:06:09.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\appsettings.json",
+              "RelativeDocumentMoniker": "SitePet\\appsettings.json",
+              "ToolTip": "C:\\Users\\49198979876\\Desktop\\ProjetoFinalAtual\\ProjetoFinal\\Aplica-o-MVC-Espera-aTemPatas-main\\SitePet\\appsettings.json",
+              "RelativeToolTip": "SitePet\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-01T18:06:07.465Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

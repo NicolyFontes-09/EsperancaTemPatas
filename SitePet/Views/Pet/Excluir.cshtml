@@ -1,0 +1,52 @@
+﻿@model SitePet.Models.Pet
+
+@{
+    ViewData["Title"] = "Excluir Pet";
+}
+
+<div class="pagina-pet">
+    <div class="caixa-pet">
+
+        <h1>Excluir Pet</h1>
+
+        <p>
+            Tem certeza de que deseja excluir este pet?
+        </p>
+
+        <div class="campo-pet">
+            <label for="Nome">Nome do Pet</label>
+            <input type="text"
+                   id="Nome"
+                   name="Nome"
+                   value="@Model.Nome"
+                   readonly />
+        </div>
+
+        <p>
+            Essa ação deverá ser confirmada antes de excluir o animal.
+        </p>
+
+        <div class="botoes-pet">
+
+            <form asp-controller="Pet"
+                  asp-action="ConfirmarExclusao"
+                  method="post">
+
+                <input type="hidden" name="id" value="@Model.Id" />
+
+                <button type="submit" class="btn btn-danger">
+                    Confirmar Exclusão
+                </button>
+
+            </form>
+
+            <a asp-controller="Pet"
+               asp-action="Index"
+               class="botao-cancelar-pet">
+                Cancelar e voltar
+            </a>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewData["Title"] = "Contato";
+}
+
+<div class="container mt-5 pagina-contato">
+
+    <div class="text-center mb-4">
+        <h1>Entre em contato</h1>
+        <p>
+            Tem alguma dúvida ou deseja saber mais sobre nosso projeto?
+            Estamos aqui para ajudar!
+        </p>
+    </div>
+
+    <div class="cartao-contato">
+
+        <h3>Fale conosco</h3>
+
+        <p>
+            <strong>Email:</strong>
+            contato@esperancatem patas.com
+        </p>
+
+        <p>
+            <strong>Telefone:</strong>
+            (14) 99999-9999
+        </p>
+
+        <p>
+            <strong>WhatsApp:</strong>
+            (14) 99999-9999
+        </p>
+
+        <hr />
+
+        <h3>Envie sua mensagem</h3>
+
+        <form asp-controller="Home" asp-action="Index" method="get">
+
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Seu nome" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Seu email" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Assunto</label>
+                <input type="text" class="form-control" placeholder="Assunto da mensagem" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-enviar">
+                Enviar mensagem
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

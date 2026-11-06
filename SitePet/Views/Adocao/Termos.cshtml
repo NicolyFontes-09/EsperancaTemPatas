@@ -1,0 +1,77 @@
+﻿
+@model SitePet.Models.Adocao
+
+@{
+    ViewData["Title"] = "Termos de Adoção";
+}
+
+<div class="container termos-adocao">
+
+    <h1 class="display-4 termos-titulo">
+        @ViewData["Title"]
+    </h1>
+
+    <p class="termos-introducao">
+        A adoção responsável envolve compromisso, cuidado e respeito à vida animal.
+        Ao prosseguir com a adoção, declaro estar ciente das responsabilidades
+        necessárias para garantir o bem-estar do animal e comprometo-me a:
+    </p>
+
+    <ul class="lista-termos">
+        <li>Oferecer um ambiente seguro, adequado e protegido, garantindo abrigo e conforto ao animal.</li>
+        <li>Fornecer alimentação apropriada e água fresca diariamente.</li>
+        <li>Manter a vacinação, a vermifugação e os demais cuidados preventivos em dia, conforme orientação veterinária.</li>
+        <li>Providenciar a castração, caso ainda não tenha sido realizada, no prazo máximo de três meses, respeitando as orientações veterinárias.</li>
+        <li>Garantir atendimento veterinário sempre que necessário, zelando pela saúde e pelo bem-estar do animal.</li>
+        <li>Não abandonar, negligenciar ou praticar qualquer forma de maus-tratos contra o animal.</li>
+        <li>Comunicar ao abrigo ou à ONG qualquer mudança relevante que possa comprometer o bem-estar do animal.</li>
+    </ul>
+
+    <p class="termos-declaracao">
+        Declaro compreender que a adoção é um compromisso de longo prazo e
+        assumo a responsabilidade pelos cuidados, pela segurança e pela
+        qualidade de vida do animal adotado.
+    </p>
+
+    <div class="termos-assinatura">
+        <img class="tassinatura"
+             src="~/img/assinatura.png"
+             alt="Assinatura Esperança Tem Patas" />
+    </div>
+
+    <form asp-controller="Adocao"
+          asp-action="Cadastrar"
+          method="post">
+
+        <input type="hidden" asp-for="PetId" />
+        <input type="hidden" asp-for="NomePet" />
+        <input type="hidden" asp-for="NomeCompleto" />
+        <input type="hidden" asp-for="Telefone" />
+        <input type="hidden" asp-for="Email" />
+        <input type="hidden" asp-for="Idade" />
+        <input type="hidden" asp-for="CEP" />
+        <input type="hidden" asp-for="Rua" />
+        <input type="hidden" asp-for="Numero" />
+        <input type="hidden" asp-for="Complemento" />
+        <input type="hidden" asp-for="Bairro" />
+        <input type="hidden" asp-for="Cidade" />
+        <input type="hidden" asp-for="Estado" />
+
+        <div class="termos-acoes">
+
+            <button class="btn fw-bold botao botao-altura"
+                    type="button"
+                    onclick="history.back()">
+                Voltar
+            </button>
+
+            <button class="btn fw-bold botao botao-altura"
+                    type="submit">
+                Adotar
+            </button>
+
+        </div>
+
+    </form>
+
+</div>

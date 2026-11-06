@@ -1,0 +1,47 @@
+﻿
+@model SitePet.Models.Adocao
+
+@{
+    ViewData["Title"] = "Solicitação enviada";
+}
+
+<div class="container pagina-adocao">
+
+    <div class="cartao-adocao solicitacao-sucesso">
+
+        <div class="icone-sucesso">
+            ✓
+        </div>
+
+        <h1>Solicitação enviada!</h1>
+
+        <p class="texto-adocao">
+            Sua solicitação de adoção foi recebida com sucesso.
+        </p>
+
+        <div class="dados-pet">
+            <h2>Pet escolhido</h2>
+
+            <p>
+                <strong>Nome:</strong> @Model.NomePet
+            </p>
+        </div>
+
+        <p class="mensagem-solicitacao">
+            Obrigado por abrir seu coração para a adoção!
+            Nossa equipe analisará sua solicitação e entrará em contato.
+        </p>
+
+        <div class="acoes-formulario">
+
+            <a asp-controller="Home"
+               asp-action="QueroAdotar"
+               class="botao-enviar">
+                Voltar para adoção
+            </a>
+
+        </div>
+
+    </div>
+
+</div>

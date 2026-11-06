@@ -1,0 +1,55 @@
+﻿@model SitePet.Models.Pet
+
+@{
+    ViewData["Title"] = "Conheça " + Model.Nome;
+}
+
+<div class="container pagina-detalhes">
+    <div class="cartao-detalhes">
+
+        <h1 class="titulo-detalhes">Conheça o @Model.Nome</h1>
+
+        <div class="conteudo-detalhes">
+
+            <div class="imagem-detalhes">
+                <img src="@Url.Content(Model.Foto)"
+                     alt="Foto de @Model.Nome" />
+            </div>
+
+            <div class="informacoes-detalhes">
+                <p><strong>Nome:</strong> @Model.Nome</p>
+                <p><strong>Espécie:</strong> @Model.Especie</p>
+                <p><strong>Raça:</strong> @Model.Raca</p>
+                <p><strong>Sexo:</strong> @Model.Sexo</p>
+                <p><strong>Idade:</strong> @Model.Idade anos</p>
+                <p><strong>Porte:</strong> @Model.Porte</p>
+                <p><strong>Vacinas:</strong> @Model.Vacinas</p>
+                <p><strong>Castrado:</strong> @(Model.Castrado ? "Sim" : "Não")</p>
+                <p><strong>Localização:</strong> @Model.Localizacao</p>
+            </div>
+
+            <div class="descricao-detalhes">
+                <p>@Model.Descricao</p>
+            </div>
+
+        </div>
+
+        <div class="acoes-detalhes">
+
+            <a asp-controller="Pet"
+               asp-action="@(Model.Especie == "Gato" ? "Gatos" : "Cachorros")"
+               class="botao-voltar-detalhes">
+                Voltar
+            </a>
+
+            <a asp-controller="Adocao"
+               asp-action="Cadastrar"
+               asp-route-id="@Model.Id"
+               class="botao-adotar-detalhes">
+                Quero Adotar
+            </a>
+
+        </div>
+
+    </div>
+</div>

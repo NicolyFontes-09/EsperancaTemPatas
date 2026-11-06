@@ -1,0 +1,54 @@
+﻿@model List<SitePet.Models.Pet>
+
+@{
+    ViewData["Title"] = "Nossos Cachorros";
+}
+
+<div class="container pagina-animais">
+
+    <div class="cabecalho-animais">
+        <h1 class="display-4">@ViewData["Title"]</h1>
+
+        <p>
+            Cada cachorro tem uma história e está esperando
+            por uma família para chamar de sua.
+        </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        @foreach (var cachorro in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="cartao-animal">
+
+                    <img src="@cachorro.Foto"
+                         class="foto-animal"
+                         alt="Cachorro @cachorro.Nome" />
+
+                    <div class="conteudo-animal">
+                        <h2>@cachorro.Nome</h2>
+
+                        <a asp-controller="Pet"
+                           asp-action="Detalhes"
+                           asp-route-id="@cachorro.Id"
+                           class="botao-animal">
+                            Mais informações
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+    </div>
+
+    <div class="voltar-animais">
+        <a asp-controller="Home"
+           asp-action="QueroAdotar"
+           class="botao-voltar-animais">
+            Voltar
+        </a>
+    </div>
+
+</div>

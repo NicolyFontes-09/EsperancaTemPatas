@@ -1,0 +1,125 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar Pet";
+}
+
+<div class="pagina-pet">
+    <div class="caixa-pet">
+
+        <h1>Cadastrar Pet</h1>
+
+        <form class="formulario-pet"
+              asp-controller="Pet"
+              asp-action="Cadastrar"
+              method="post"
+              enctype="multipart/form-data">
+
+          
+            <div class="painel-informacoes-pet">
+                <h2>Informações básicas</h2>
+
+                <div class="campo-pet">
+                    <label for="Nome">Nome do Pet</label>
+                    <input type="text" id="Nome" name="Nome" required />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Especie">Espécie</label>
+                    <select id="Especie" name="Especie" required>
+                        <option value="">Selecione</option>
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                    </select>
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Raca">Raça</label>
+                    <input type="text" id="Raca" name="Raca" required />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Sexo">Sexo</label>
+                    <select id="Sexo" name="Sexo" required>
+                        <option value="">Selecione</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Fêmea">Fêmea</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            <div class="painel-informacoes-pet">
+                <h2>Características</h2>
+
+                <div class="campo-pet">
+                    <label for="Idade">Idade (anos)</label>
+                    <input type="number" id="Idade" name="Idade"
+                           min="0" step="1" required />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Porte">Porte</label>
+                    <select id="Porte" name="Porte" required>
+                        <option value="">Selecione</option>
+                        <option value="Pequeno">Pequeno</option>
+                        <option value="Médio">Médio</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Vacinas">Vacinas</label>
+                    <input type="text" id="Vacinas" name="Vacinas"
+                           placeholder="Ex.: V10, antirrábica" />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Castrado">Castrado?</label>
+                    <select id="Castrado" name="Castrado" required>
+                        <option value="">Selecione</option>
+                        <option value="true">Sim</option>
+                        <option value="false">Não</option>
+                    </select>
+                </div>
+            </div>
+
+           
+            <div class="painel-informacoes-pet">
+                <h2>Outras informações</h2>
+
+                <div class="campo-pet">
+                    <label for="Localizacao">Localização</label>
+                    <input type="text" id="Localizacao"
+                           name="Localizacao" required />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Foto">Adicionar imagem do pet</label>
+                    <input type="file" id="Foto" name="Foto"
+                           accept="image/*" />
+                </div>
+
+                <div class="campo-pet">
+                    <label for="Descricao">Descrição do Pet</label>
+                    <textarea id="Descricao" name="Descricao"
+                              rows="4" required></textarea>
+                </div>
+            </div>
+
+           
+            <div class="botoes-pet">
+                <button type="submit" class="botao-pet">
+                    Confirmar informações
+                </button>
+
+                <a asp-controller="Pet"
+                   asp-action="Index"
+                   class="botao-cancelar-pet">
+                    Cancelar
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Quero Adotar";
+}
+
+<div class="container text-center pagina-adotar">
+
+    <h1 class="display-4 titulo-adotar">@ViewData["Title"]</h1>
+
+    <p class="frase-adotar">
+        Seu novo melhor amigo está esperando por você. 🐾
+    </p>
+
+    <div class="row justify-content-center g-4">
+
+        <div class="col-md-5 col-lg-4">
+            <div class="bdescricao cartao-adotar">
+                <img class="imagem-adotar" src="~/img/nina.png" alt="Gata Nina">
+
+                <p class="fw-bold mt-3 fs-4">Adote um gato</p>
+
+                <a asp-controller="Pet"  
+                   asp-action="Gatos"
+                   class="botao-adotar">
+                    Quero adotar
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+            <div class="bdescricao cartao-adotar">
+                <img class="imagem-adotar" src="~/img/loki.png" alt="Cachorro Loki">
+
+                <p class="fw-bold mt-3 fs-4">Adote um cachorro</p>
+
+                <a asp-controller="Pet"
+                   asp-action="Cachorros"
+                   class="botao-adotar">
+                    Quero adotar
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,72 @@
+﻿@model SitePet.Models.Adocao
+
+@{
+    ViewData["Title"] = "Detalhes da Solicitação";
+}
+
+<div class="container mt-4 pagina-detalhes-adocao">
+
+    <h1 class="mb-4">Detalhes da Solicitação</h1>
+
+    <div class="card p-4">
+
+        <h3>Informações do Pet</h3>
+        <p><strong>Pet:</strong> @Model.NomePet</p>
+
+        <hr />
+
+        <h3>Dados do Adotante</h3>
+        <p><strong>Nome:</strong> @Model.NomeCompleto</p>
+        <p><strong>Email:</strong> @Model.Email</p>
+        <p><strong>Telefone:</strong> @Model.Telefone</p>
+        <p><strong>Idade:</strong> @Model.Idade</p>
+
+        <hr />
+
+        <h3>Endereço</h3>
+        <p><strong>CEP:</strong> @Model.CEP</p>
+        <p><strong>Rua:</strong> @Model.Rua</p>
+        <p><strong>Número:</strong> @Model.Numero</p>
+        <p><strong>Complemento:</strong> @(string.IsNullOrWhiteSpace(Model.Complemento) ? "Não informado" : Model.Complemento)</p>
+        <p><strong>Bairro:</strong> @Model.Bairro</p>
+        <p><strong>Cidade:</strong> @Model.Cidade</p>
+        <p><strong>Estado:</strong> @Model.Estado</p>
+
+        <hr />
+
+        <h3>Status da Solicitação</h3>
+
+        @if (Model.Status == "Pendente")
+        {
+            <span class="badge bg-warning text-dark">Pendente</span>
+        }
+        else if (Model.Status == "Aprovada")
+        {
+            <span class="badge bg-success">Aprovada</span>
+        }
+        else if (Model.Status == "Rejeitada")
+        {
+            <span class="badge bg-danger">Rejeitada</span>
+        }
+        else
+        {
+            <span class="badge bg-secondary">@Model.Status</span>
+        }
+
+        @if (!string.IsNullOrWhiteSpace(Model.Justificativa))
+        {
+            <hr />
+
+            <h3>Justificativa da Rejeição</h3>
+            <p>@Model.Justificativa</p>
+        }
+
+        <hr />
+
+        <a asp-action="Pendencia" class="btn btn-secondary">
+            Voltar
+        </a>
+
+    </div>
+
+</div>

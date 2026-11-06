@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.EntryPointFilePath = 
+build_property.RootNamespace = SitePet
+build_property.RootNamespace = SitePet
+build_property.ProjectDir = C:\Users\49198979876\Desktop\ProjetoFinalAtual\ProjetoFinal\Aplica-o-MVC-Espera-aTemPatas-main\SitePet\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\49198979876\Desktop\ProjetoFinalAtual\ProjetoFinal\Aplica-o-MVC-Espera-aTemPatas-main\SitePet
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXERldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Formulario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXEZvcm11bGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/MinhasAdocoes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXE1pbmhhc0Fkb2NvZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Pendencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXFBlbmRlbmNpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Rejeitar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXFJlamVpdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Solicitacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXFNvbGljaXRhY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Adocao/Termos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvY2FvXFRlcm1vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Home/Contato.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Home/QuemSomos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVtU29tb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Home/QueroAdotar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVyb0Fkb3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Cachorros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XENhY2hvcnJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XENhZGFzdHJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XERldGFsaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEVkaXRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Excluir.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEV4Y2x1aXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Gatos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEdhdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Pet/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGV0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/49198979876/Desktop/ProjetoFinalAtual/ProjetoFinal/Aplica-o-MVC-Espera-aTemPatas-main/SitePet/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0fnljzfgw8

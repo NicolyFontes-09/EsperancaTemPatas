@@ -5,9 +5,12 @@
 }
 
 <div class="container pagina-detalhes">
+
     <div class="cartao-detalhes">
 
-        <h1 class="titulo-detalhes">Conheça o @Model.Nome</h1>
+        <h1 class="titulo-detalhes">
+            Conheça o @Model.Nome
+        </h1>
 
         <div class="conteudo-detalhes">
 
@@ -17,19 +20,40 @@
             </div>
 
             <div class="informacoes-detalhes">
+
                 <p><strong>Nome:</strong> @Model.Nome</p>
+
                 <p><strong>Espécie:</strong> @Model.Especie</p>
+
                 <p><strong>Raça:</strong> @Model.Raca</p>
+
                 <p><strong>Sexo:</strong> @Model.Sexo</p>
+
                 <p><strong>Idade:</strong> @Model.Idade anos</p>
+
                 <p><strong>Porte:</strong> @Model.Porte</p>
+
                 <p><strong>Vacinas:</strong> @Model.Vacinas</p>
-                <p><strong>Castrado:</strong> @(Model.Castrado ? "Sim" : "Não")</p>
+
+                <p>
+                    <strong>Castrado:</strong>
+                    @(Model.Castrado ? "Sim" : "Não")
+                </p>
+
                 <p><strong>Localização:</strong> @Model.Localizacao</p>
+
             </div>
 
             <div class="descricao-detalhes">
-                <p>@Model.Descricao</p>
+
+                <h3>Sobre o pet</h3>
+
+                <p>
+                    @(string.IsNullOrWhiteSpace(Model.Descricao)
+                        ? "Ainda não há descrição disponível."
+                        : Model.Descricao)
+                </p>
+
             </div>
 
         </div>
@@ -52,4 +76,5 @@
         </div>
 
     </div>
+
 </div>

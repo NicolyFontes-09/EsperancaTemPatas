@@ -1,4 +1,5 @@
-﻿@model SitePet.Models.Pet
+﻿
+@model SitePet.Models.Pet
 
 @{
     ViewData["Title"] = "Excluir Pet";
@@ -26,7 +27,7 @@
             Essa ação deverá ser confirmada antes de excluir o animal.
         </p>
 
-        <div class="botoes-pet">
+        <div class="botoes-pet botoes-excluir">
 
             <form asp-controller="Pet"
                   asp-action="ConfirmarExclusao"
@@ -34,7 +35,8 @@
 
                 <input type="hidden" name="id" value="@Model.Id" />
 
-                <button type="submit" class="btn btn-danger">
+                <button type="submit"
+                        class="botao-confirmar-exclusao">
                     Confirmar Exclusão
                 </button>
 
@@ -42,7 +44,7 @@
 
             <a asp-controller="Pet"
                asp-action="Index"
-               class="botao-cancelar-pet">
+               class="botao-cancelar-exclusao">
                 Cancelar e voltar
             </a>
 

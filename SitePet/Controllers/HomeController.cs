@@ -1,7 +1,6 @@
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 using SitePet.Models;
-using System.Diagnostics;
 
 namespace SitePet.Controllers
 {
@@ -11,28 +10,41 @@ namespace SitePet.Controllers
         {
             return View();
         }
-       
+
         public IActionResult QueroAdotar()
         {
-
             return View();
         }
-        
+
         public IActionResult QuemSomos()
         {
             return View();
         }
-      
+
         public IActionResult Privacy()
         {
             return View();
         }
+
+        [HttpGet]
         public IActionResult Contato()
         {
-            return View();
+            return View(new MensagemContato());
         }
 
+        [HttpPost]
+        public IActionResult Contato(MensagemContato mensagem)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(mensagem);
+            }
 
-        
+            // Futuramente, enviar mensagem para a API.
+
+            TempData["MensagemSucesso"] = "Mensagem recebida!";
+
+            return RedirectToAction("Contato");
+        }
     }
 }

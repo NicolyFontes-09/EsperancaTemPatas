@@ -7,18 +7,25 @@
 <div class="container mt-4 pagina-gerenciar-pets">
 
     <div class="d-flex justify-content-between align-items-center mb-4">
+
         <h1>Gerenciar Pets</h1>
 
-        <a asp-action="Cadastrar" class="btn btn-primary">
-            Cadastrar Pet
-        </a>
     </div>
 
     @if (Model == null || Model.Count == 0)
     {
         <div class="text-center mt-5">
+
             <h4>Nenhum pet cadastrado.</h4>
+
             <p>Cadastre um animal para começar.</p>
+
+            <a asp-controller="Pet"
+               asp-action="Cadastrar"
+               class="btn btn-primary">
+                Cadastrar primeiro pet
+            </a>
+
         </div>
     }
     else
@@ -39,12 +46,14 @@
                 </thead>
 
                 <tbody>
+
                     @foreach (var pet in Model)
                     {
                         <tr>
+
                             <td>
                                 <img src="@Url.Content(pet.Foto)"
-                                     alt="@pet.Nome"
+                                     alt="Foto de @pet.Nome"
                                      style="width:80px;height:80px;object-fit:cover;" />
                             </td>
 
@@ -53,35 +62,39 @@
                             <td>@pet.Raca</td>
                             <td>@pet.Porte</td>
 
-                            <td>
-                                <div class="d-flex gap-2">
-
-                                    <a asp-action="Detalhes"
+                            <td class="text-center align-middle">
+                                <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                                    <a asp-controller="Pet"
+                                       asp-action="Editar"
                                        asp-route-id="@pet.Id"
-                                       class="btn btn-primary btn-sm">
-                                        Detalhes
-                                    </a>
-
-                                    <a asp-action="Editar"
-                                       asp-route-id="@pet.Id"
-                                       class="btn btn-warning btn-sm">
+                                       class="btn btn-warning px-3 py-2">
                                         Editar
                                     </a>
 
-                                    <a asp-action="Excluir"
+                                    <a asp-controller="Pet"
+                                       asp-action="Excluir"
                                        asp-route-id="@pet.Id"
-                                       class="btn btn-danger btn-sm">
+                                       class="btn btn-danger px-3 py-2">
                                         Excluir
                                     </a>
-
                                 </div>
                             </td>
+
                         </tr>
                     }
+
                 </tbody>
 
             </table>
 
+        </div>
+
+        <div class="text-center mt-3">
+            <a asp-controller="Pet"
+               asp-action="Cadastrar"
+               class="btn btn-primary px-4 py-2">
+                Cadastrar Pet
+            </a>
         </div>
     }
 

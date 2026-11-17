@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SitePet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d30061e2fe9bc9ff7d75d05e5a42719b8d6f5b6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62feb5d750368bdc2e528352149a32378588a873")]
 [assembly: System.Reflection.AssemblyProductAttribute("SitePet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SitePet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

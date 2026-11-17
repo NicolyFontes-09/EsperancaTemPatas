@@ -14,13 +14,16 @@
               method="post"
               enctype="multipart/form-data">
 
-          
+            <!-- Informações básicas -->
             <div class="painel-informacoes-pet">
                 <h2>Informações básicas</h2>
 
                 <div class="campo-pet">
                     <label for="Nome">Nome do Pet</label>
-                    <input type="text" id="Nome" name="Nome" required />
+                    <input type="text"
+                           id="Nome"
+                           name="Nome"
+                           required />
                 </div>
 
                 <div class="campo-pet">
@@ -34,7 +37,10 @@
 
                 <div class="campo-pet">
                     <label for="Raca">Raça</label>
-                    <input type="text" id="Raca" name="Raca" required />
+                    <input type="text"
+                           id="Raca"
+                           name="Raca"
+                           required />
                 </div>
 
                 <div class="campo-pet">
@@ -47,14 +53,18 @@
                 </div>
             </div>
 
-            
+            <!-- Características -->
             <div class="painel-informacoes-pet">
                 <h2>Características</h2>
 
                 <div class="campo-pet">
                     <label for="Idade">Idade (anos)</label>
-                    <input type="number" id="Idade" name="Idade"
-                           min="0" step="1" required />
+                    <input type="number"
+                           id="Idade"
+                           name="Idade"
+                           min="0"
+                           step="1"
+                           required />
                 </div>
 
                 <div class="campo-pet">
@@ -69,7 +79,9 @@
 
                 <div class="campo-pet">
                     <label for="Vacinas">Vacinas</label>
-                    <input type="text" id="Vacinas" name="Vacinas"
+                    <input type="text"
+                           id="Vacinas"
+                           name="Vacinas"
                            placeholder="Ex.: V10, antirrábica" />
                 </div>
 
@@ -83,30 +95,36 @@
                 </div>
             </div>
 
-           
+            <!-- Outras informações -->
             <div class="painel-informacoes-pet">
                 <h2>Outras informações</h2>
 
                 <div class="campo-pet">
                     <label for="Localizacao">Localização</label>
-                    <input type="text" id="Localizacao"
-                           name="Localizacao" required />
+                    <input type="text"
+                           id="Localizacao"
+                           name="Localizacao"
+                           required />
                 </div>
 
                 <div class="campo-pet">
                     <label for="Foto">Adicionar imagem do pet</label>
-                    <input type="file" id="Foto" name="Foto"
+                    <input type="file"
+                           id="Foto"
+                           name="Foto"
                            accept="image/*" />
                 </div>
 
                 <div class="campo-pet">
                     <label for="Descricao">Descrição do Pet</label>
-                    <textarea id="Descricao" name="Descricao"
-                              rows="4" required></textarea>
+                    <textarea id="Descricao"
+                              name="Descricao"
+                              rows="4"
+                              required></textarea>
                 </div>
             </div>
 
-           
+            <!-- Botões -->
             <div class="botoes-pet">
                 <button type="submit" class="botao-pet">
                     Confirmar informações

@@ -54,7 +54,9 @@
                             }
                             else
                             {
-                                <span class="badge bg-secondary">@adocao.Status</span>
+                               <span class="badge bg-secondary">
+                                   @(adocao.Status ?? "Não informado")
+                               </span>
                             }
                         </td>
 

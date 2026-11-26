@@ -29,12 +29,11 @@
                     Explique o motivo da rejeição. Essa justificativa poderá ser consultada pelo solicitante.
                 </p>
 
-                <textarea id="Justificativa"
-                          name="Justificativa"
-                          class="form-control"
-                          rows="5"
-                          required
-                          maxlength="1000"></textarea>
+               <textarea asp-for="Justificativa"
+                            class="form-control"
+                            rows="5"
+                            required
+                           maxlength="1000"></textarea>
 
                 <span asp-validation-for="Justificativa" class="text-danger"></span>
 

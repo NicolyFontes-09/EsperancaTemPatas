@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,55 +14,85 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3 bcolor">
             <div class="container-fluid">
+
                 <a class="navbar-brand"
                    asp-area=""
                    asp-controller="@(User.IsInRole("Admin") ? "Pet" : "Home")"
                    asp-action="Index">
                     <img class="logo-nav" src="~/img/logo-site.png" />
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+
+                        @if (User.IsInRole("Admin"))
+                        {
                             <li class="nav-item">
                                 <a class="nav-link fs-5 fw-bold menu-item"
-                                   asp-area=""
-                                   asp-controller="@(User.IsInRole("Admin") ? "Pet" : "Home")"
+                                   asp-controller="Pet"
+                                   asp-action="Index">
+                                    Gerenciar Pets
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-bold menu-item"
+                                   asp-controller="Home"
                                    asp-action="Index">
                                     Página Inicial
                                 </a>
                             </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-bold menu-item" asp-area="" asp-controller="Home" asp-action="QueroAdotar">Quero Adotar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fs-5 fw-bold menu-item" asp-area="" asp-controller="Home" asp-action="QuemSomos">Quem Somos</a>
-                        </li>
-                        @if (User.Identity != null && User.Identity.IsAuthenticated)
-                        {
+
                             <li class="nav-item">
                                 <a class="nav-link fs-5 fw-bold menu-item"
-                                   asp-area=""
-                                   asp-controller="Adocao"
-                                   asp-action="MinhasAdocoes">
-                                    Minhas Adoções
+                                   asp-controller="Home"
+                                   asp-action="QueroAdotar">
+                                    Quero Adotar
                                 </a>
                             </li>
-                        }
-                        
 
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-bold menu-item"
+                                   asp-controller="Home"
+                                   asp-action="QuemSomos">
+                                    Quem Somos
+                                </a>
+                            </li>
+
+                            @if (User.Identity != null && User.Identity.IsAuthenticated)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link fs-5 fw-bold menu-item"
+                                       asp-controller="Adocao"
+                                       asp-action="MinhasAdocoes">
+                                        Minhas Adoções
+                                    </a>
+                                </li>
+                            }
+                        }
 
                     </ul>
+
                     <partial name="_LoginPartial" />
+
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container  rounded mb-2">
+
+    <div class="container rounded mb-2">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -69,9 +100,10 @@
 
     <footer class="border-top footer text-muted bcolor">
         <div class="container">
-            &copyEsperança Tem Patas 
+            &copy; Esperança Tem Patas
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

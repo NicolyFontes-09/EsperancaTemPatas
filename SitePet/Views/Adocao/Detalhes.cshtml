@@ -47,11 +47,11 @@
         else if (Model.Status == "Rejeitada")
         {
             <span class="badge bg-danger">Rejeitada</span>
-        }
-        else
+        }else
         {
-            <span class="badge bg-secondary">@Model.Status</span> 
-
+           <span class="badge bg-secondary">
+             @(Model.Status ?? "Não informado")
+          </span>
         }
 
         @if (!string.IsNullOrWhiteSpace(Model.Justificativa))

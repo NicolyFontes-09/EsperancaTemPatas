@@ -6,7 +6,6 @@ namespace SitePet.Controllers
 {
     public class AdocaoController : Controller
     {
-
         [HttpGet]
         public IActionResult Cadastrar(int id)
         {
@@ -24,26 +23,45 @@ namespace SitePet.Controllers
             return View("~/Views/Adocao/Formulario.cshtml", adocao);
         }
 
+
         [HttpPost]
         public IActionResult Cadastrar(Adocao adocao)
         {
-            adocao.Id = AdocaoMocados.Solicitacoes.Count + 1;
+            if (!ModelState.IsValid)
+            {
+                return View("~/Views/Adocao/Formulario.cshtml", adocao);
+            }
+
+            adocao.Id = AdocaoMocados.Solicitacoes.Count == 0
+                ? 1
+                : AdocaoMocados.Solicitacoes.Max(a => a.Id) + 1;
+
+            adocao.Status = "Pendente";
+            adocao.UsuarioId = string.Empty;
 
             AdocaoMocados.Solicitacoes.Add(adocao);
 
             return View("~/Views/Adocao/Solicitacao.cshtml", adocao);
         }
 
+
         [HttpPost]
         public IActionResult Termos(Adocao adocao)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("~/Views/Adocao/Formulario.cshtml", adocao);
+            }
+
             return View("Termos", adocao);
         }
+
 
         public IActionResult Pendencia()
         {
             return View(AdocaoMocados.Solicitacoes);
         }
+
 
         [HttpPost]
         public IActionResult Aprovar(int id)
@@ -51,10 +69,10 @@ namespace SitePet.Controllers
             var adocao = AdocaoMocados.Solicitacoes
                 .FirstOrDefault(a => a.Id == id);
 
-            if (adocao != null)
-            {
-                adocao.Status = "Aprovada";
-            }
+            if (adocao == null)
+                return NotFound();
+
+            adocao.Status = "Aprovada";
 
             return RedirectToAction("Pendencia");
         }
@@ -72,6 +90,7 @@ namespace SitePet.Controllers
             return View(adocao);
         }
 
+
         [HttpPost]
         public IActionResult Rejeitar(Adocao adocao)
         {
@@ -83,6 +102,11 @@ namespace SitePet.Controllers
 
             if (string.IsNullOrWhiteSpace(adocao.Justificativa))
             {
+                ModelState.AddModelError(
+                    "Justificativa",
+                    "Informe o motivo da rejeição."
+                );
+
                 return View(solicitacao);
             }
 
@@ -91,7 +115,6 @@ namespace SitePet.Controllers
 
             return RedirectToAction("Pendencia");
         }
-
 
 
         public IActionResult Detalhes(int id)
@@ -105,20 +128,11 @@ namespace SitePet.Controllers
             return View(adocao);
         }
 
+
         public IActionResult MinhasAdocoes()
         {
-            var emailUsuario = User.Identity?.Name;
-
-            if (string.IsNullOrEmpty(emailUsuario))
-                return Redirect("/Identity/Account/Login");
-
-            var minhasAdocoes = AdocaoMocados.Solicitacoes
-                .Where(a => a.Email == emailUsuario)
-                .ToList();
-
-            return View(minhasAdocoes);
+            // Temporariamente sem Identity.
+            return View(new List<Adocao>());
         }
-
-
     }
 }

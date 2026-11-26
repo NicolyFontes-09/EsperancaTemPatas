@@ -37,8 +37,8 @@
                     <p>
                         <strong>Status:</strong>
 
-                        <span class="status-adocao @adocao.Status.ToLower()">
-                            @adocao.Status
+                        <span class="status-adocao @(adocao.Status?.ToLower() ?? "pendente")">
+                           @(adocao.Status ?? "Pendente")
                         </span>
                     </p>
 

@@ -6,10 +6,6 @@ namespace SitePet.Controllers
 {
     public class AdocaoController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         [HttpGet]
         public IActionResult Cadastrar(int id)

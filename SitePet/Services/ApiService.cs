@@ -1,18 +1,66 @@
-﻿using System.Net.Http;
+﻿
+using System.Net.Http;
 using System.Net.Http.Json;
-using System.Text;
+using System.Net.Http.Headers;
 using SitePet.DTOs;
 using SitePet.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace SitePet.Services
 {
     public class ApiService
     {
         private readonly HttpClient _httpClient;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public ApiService(HttpClient httpClient)
+        public ApiService(
+            HttpClient httpClient,
+            IHttpContextAccessor httpContextAccessor)
         {
             _httpClient = httpClient;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        // Login na API
+        public async Task<HttpResponseMessage> LoginAsync(
+            string email,
+            string senha)
+        {
+            var dados = new
+            {
+                Email = email,
+                Senha = senha
+            };
+
+            return await _httpClient.PostAsJsonAsync(
+                "api/Auth/login",
+                dados
+            );
+        }
+
+        // Criar requisição autenticada
+        private async Task<HttpResponseMessage> EnviarComTokenAsync(
+            HttpMethod metodo,
+            string endereco,
+            HttpContent? conteudo = null)
+        {
+            var token = _httpContextAccessor.HttpContext?
+                .Session.GetString("Token");
+
+            var requisicao = new HttpRequestMessage(metodo, endereco);
+
+            if (conteudo != null)
+            {
+                requisicao.Content = conteudo;
+            }
+
+            if (!string.IsNullOrWhiteSpace(token))
+            {
+                requisicao.Headers.Authorization =
+                    new AuthenticationHeaderValue("Bearer", token);
+            }
+
+            return await _httpClient.SendAsync(requisicao);
         }
 
         // Buscar Pets da API
@@ -66,7 +114,6 @@ namespace SitePet.Services
                 "Descricao"
             );
 
-            // Enviar foto, caso tenha sido selecionada
             if (foto != null && foto.Length > 0)
             {
                 var conteudoFoto = new StreamContent(
@@ -80,13 +127,20 @@ namespace SitePet.Services
                 );
             }
 
-            return await _httpClient.PostAsync("api/Pet", dados);
+            return await EnviarComTokenAsync(
+                HttpMethod.Post,
+                "api/Pet",
+                dados
+            );
         }
 
         // Buscar adoções da API
         public async Task<List<AdocaoDTO>> BuscarAdocoesAsync()
         {
-            var resposta = await _httpClient.GetAsync("api/Adocao");
+            var resposta = await EnviarComTokenAsync(
+                HttpMethod.Get,
+                "api/Adocao"
+            );
 
             if (!resposta.IsSuccessStatusCode)
             {
@@ -104,7 +158,10 @@ namespace SitePet.Services
         {
             try
             {
-                var resposta = await _httpClient.GetAsync("api/Adocao");
+                var resposta = await EnviarComTokenAsync(
+                    HttpMethod.Get,
+                    "api/Adocao"
+                );
 
                 return resposta.IsSuccessStatusCode;
             }

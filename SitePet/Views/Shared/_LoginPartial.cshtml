@@ -1,26 +1,32 @@
-﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+﻿@using Microsoft.AspNetCore.Http
 
 <ul class="navbar-nav">
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
-    </li>
-    <li class="nav-item">
-        <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
-        </form>
-    </li>
-}
-else
-{
-    <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold menu-item" asp-area="Identity" asp-page="/Account/Register">Cadastra-se</a>
-    </li>
-    <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold menu-item" asp-area="Identity" asp-page="/Account/Login">Entrar</a>
-    </li>
-}
+
+    @if (Context.Session.GetString("Token") != null)
+    {
+        <li class="nav-item">
+            <span class="nav-link fs-5 fw-bold menu-item">
+                Olá, @Context.Session.GetString("NomeUsuario")!
+            </span>
+        </li>
+
+        <li class="nav-item">
+            <form asp-controller="Auth" asp-action="Logout" method="post">
+                <button type="submit" class="nav-link btn btn-link fs-5 fw-bold menu-item">
+                    Sair
+                </button>
+            </form>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item">
+            <a class="nav-link fs-5 fw-bold menu-item"
+               asp-controller="Auth"
+               asp-action="Login">
+                Entrar
+            </a>
+        </li>
+    }
+
 </ul>

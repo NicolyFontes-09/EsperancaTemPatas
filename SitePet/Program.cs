@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SitePet.Data;
@@ -5,7 +6,7 @@ using SitePet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Conexão com o banco de dados
+// Conexão com o banco de dados atual do SitePet
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
@@ -14,7 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-// Configuração do Identity
+// Identity atual: manteremos temporariamente até migrarmos o login
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -22,7 +23,20 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 // Controllers e Views
 builder.Services.AddControllersWithViews();
 
-// Configuração para conectar com a API
+// Permite acessar a sessão nas requisições
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromHours(2);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+});
+
+// Conexão com a API
 builder.Services.AddHttpClient<ApiService>(client =>
 {
     client.BaseAddress = new Uri("https://localhost:7122/");
@@ -43,6 +57,9 @@ else
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+// Sessão
+app.UseSession();
 
 app.UseAuthorization();
 

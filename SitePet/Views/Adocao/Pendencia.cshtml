@@ -1,4 +1,5 @@
-﻿@model List<SitePet.Models.Adocao>
+﻿
+@model List<SitePet.Models.Adocao>
 
 @{
     ViewData["Title"] = "Solicitações de Adoção";
@@ -17,82 +18,95 @@
     }
     else
     {
-        <table class="table table-bordered table-striped align-middle">
+        <div class="tabela-pendencias">
+            <table class="table table-bordered table-striped align-middle">
 
-            <thead>
-                <tr>
-                    <th>Pet</th>
-                    <th>Adotante</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
-                    <th>Status</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                @foreach (var adocao in Model)
-                {
+                <thead>
                     <tr>
-                        <td>@adocao.NomePet</td>
-                        <td>@adocao.NomeCompleto</td>
-                        <td>@adocao.Email</td>
-                        <td>@adocao.Telefone</td>
+                        <th>Pet</th>
+                        <th>Adotante</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
 
-                        <td>
-                            @if (adocao.Status == "Pendente")
-                            {
-                                <span class="badge bg-warning text-dark">Pendente</span>
-                            }
-                            else if (adocao.Status == "Aprovada")
-                            {
-                                <span class="badge bg-success">Aprovada</span>
-                            }
-                            else if (adocao.Status == "Rejeitada")
-                            {
-                                <span class="badge bg-danger">Rejeitada</span>
-                            }
-                            else
-                            {
-                               <span class="badge bg-secondary">
-                                   @(adocao.Status ?? "Não informado")
-                               </span>
-                            }
-                        </td>
+                <tbody>
+                    @foreach (var adocao in Model)
+                    {
+                        <tr>
+                            <td data-label="Pet">
+                                @adocao.NomePet
+                            </td>
 
-                        <td>
-                            <div class="d-flex gap-2">
+                            <td data-label="Adotante">
+                                @adocao.NomeCompleto
+                            </td>
 
-                                <a asp-action="Detalhes"
-                                   asp-route-id="@adocao.Id"
-                                   class="btn btn-primary btn-sm">
-                                    Detalhes
-                                </a>
+                            <td data-label="Email">
+                                @adocao.Email
+                            </td>
 
+                            <td data-label="Telefone">
+                                @adocao.Telefone
+                            </td>
+
+                            <td data-label="Status">
                                 @if (adocao.Status == "Pendente")
                                 {
-                                    <form asp-action="Aprovar" method="post">
-                                        <input type="hidden" name="id" value="@adocao.Id" />
-
-                                        <button type="submit" class="btn btn-success btn-sm">
-                                            Aprovar
-                                        </button>
-                                    </form>
-
-                                    <a asp-action="Rejeitar"
-                                       asp-route-id="@adocao.Id"
-                                       class="btn btn-danger btn-sm">
-                                        Rejeitar
-                                    </a>
+                                    <span class="badge bg-warning text-dark">Pendente</span>
                                 }
+                                else if (adocao.Status == "Aprovada")
+                                {
+                                    <span class="badge bg-success">Aprovada</span>
+                                }
+                                else if (adocao.Status == "Rejeitada")
+                                {
+                                    <span class="badge bg-danger">Rejeitada</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">
+                                        @(adocao.Status ?? "Não informado")
+                                    </span>
+                                }
+                            </td>
 
-                            </div>
-                        </td>
-                    </tr>
-                }
-            </tbody>
+                            <td data-label="Ações">
+                                <div class="acoes-pendencia">
 
-        </table>
+                                    <a asp-action="Detalhes"
+                                       asp-route-id="@adocao.Id"
+                                       class="btn btn-primary btn-sm">
+                                        Detalhes
+                                    </a>
+
+                                    @if (adocao.Status == "Pendente")
+                                    {
+                                        <form asp-action="Aprovar" method="post">
+                                            <input type="hidden" name="id" value="@adocao.Id" />
+
+                                            <button type="submit" class="btn btn-success btn-sm">
+                                                Aprovar
+                                            </button>
+                                        </form>
+
+                                        <a asp-action="Rejeitar"
+                                           asp-route-id="@adocao.Id"
+                                           class="btn btn-danger btn-sm">
+                                            Rejeitar
+                                        </a>
+                                    }
+
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+
+            </table>
+        </div>
     }
 
 </div>

@@ -1,4 +1,5 @@
-﻿@model List<SitePet.Models.Pet>
+﻿
+@model List<SitePet.Models.Pet>
 
 @{
     ViewData["Title"] = "Gerenciar Pets";
@@ -7,17 +8,13 @@
 <div class="container mt-4 pagina-gerenciar-pets">
 
     <div class="d-flex justify-content-between align-items-center mb-4">
-
         <h1>Gerenciar Pets</h1>
-
     </div>
 
     @if (Model == null || Model.Count == 0)
     {
         <div class="text-center mt-5">
-
             <h4>Nenhum pet cadastrado.</h4>
-
             <p>Cadastre um animal para começar.</p>
 
             <a asp-controller="Pet"
@@ -25,12 +22,11 @@
                class="btn btn-primary">
                 Cadastrar primeiro pet
             </a>
-
         </div>
     }
     else
     {
-        <div class="table-responsive">
+        <div class="tabela-gerenciar-pets">
 
             <table class="table table-bordered table-striped align-middle">
 
@@ -46,43 +42,44 @@
                 </thead>
 
                 <tbody>
-
                     @foreach (var pet in Model)
                     {
                         <tr>
-
-                            <td>
+                            <td data-label="Foto">
                                 <img src="@Url.Content(pet.Foto)"
                                      alt="Foto de @pet.Nome"
-                                     style="width:80px;height:80px;object-fit:cover;" />
+                                     class="foto-gerenciar-pet" />
                             </td>
 
-                            <td>@pet.Nome</td>
-                            <td>@pet.Especie</td>
-                            <td>@pet.Raca</td>
-                            <td>@pet.Porte</td>
+                            <td data-label="Nome">@pet.Nome</td>
 
-                            <td class="text-center align-middle">
-                                <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                            <td data-label="Espécie">@pet.Especie</td>
+
+                            <td data-label="Raça">@pet.Raca</td>
+
+                            <td data-label="Porte">@pet.Porte</td>
+
+                            <td data-label="Ações">
+                                <div class="acoes-gerenciar-pets">
+
                                     <a asp-controller="Pet"
                                        asp-action="Editar"
                                        asp-route-id="@pet.Id"
-                                       class="btn btn-warning px-3 py-2">
+                                       class="btn btn-warning">
                                         Editar
                                     </a>
 
                                     <a asp-controller="Pet"
                                        asp-action="Excluir"
                                        asp-route-id="@pet.Id"
-                                       class="btn btn-danger px-3 py-2">
+                                       class="btn btn-danger">
                                         Excluir
                                     </a>
+
                                 </div>
                             </td>
-
                         </tr>
                     }
-
                 </tbody>
 
             </table>

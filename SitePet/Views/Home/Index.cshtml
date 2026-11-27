@@ -3,24 +3,29 @@
     ViewData["Title"] = "Página Inicial";
 }
 
-<div class="text-center p-3">
+<div class="pagina-inicial text-center p-3">
 
-   <img class="img-grande"
-     src="~/img/golpes1.png"
-     alt="Banner principal do Esperança tem Patas" />
+    <img class="banner-principal"
+         src="~/img/golpes1.png"
+         alt="Banner principal do Esperança tem Patas" />
 
-    <div class="d-grid gap-2 mt-4 mb-4 text-center">
-   <a asp-controller="Home"
-   asp-action="Contato"
-   class="btn btn-contato">
-    Entre em contato
-  </a>
+    <div class="botao-contato-inicial">
+        <a asp-controller="Home"
+           asp-action="Contato"
+           class="btn btn-contato">
+            Entre em contato
+        </a>
     </div>
 
-    <div class="text-center d-flex justify-content-between" >
-        <img class="img-pequena" src="~/img/1.png" alt="Banner do Esperança tem Patas" />
-        <img class="img-pequena" src="~/img/2.png" alt="Banner do Esperança tem Patas" />
-        <img class="img-pequena" src="~/img/3.png" alt="Banner do Esperança tem Patas" />
+    <div class="banners-informativos">
+        <img src="~/img/1.png"
+             alt="Informação sobre adoção" />
+
+        <img src="~/img/2.png"
+             alt="Informação sobre adoção" />
+
+        <img src="~/img/3.png"
+             alt="Informação sobre adoção" />
     </div>
 
 </div>

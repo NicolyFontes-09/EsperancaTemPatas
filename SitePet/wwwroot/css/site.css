@@ -186,7 +186,7 @@ body {
         margin-bottom: 5px;
     }
 
-    /*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
 /* PÁGINA TERMOS DE ADOÇÃO */
 .termos-adocao {
@@ -490,7 +490,7 @@ body {
 /* Cartões dos animais */
 .cartao-animal {
     background-color: #EFB0BB;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 15px;
     padding: 20px;
     height: 100%;
@@ -551,7 +551,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px 30px;
-     border-radius: 8px;
+    border-radius: 8px;
 }
 
     .botao-voltar-animais:hover {
@@ -676,7 +676,7 @@ body {
 
     .acoes-detalhes {
         flex-direction: column;*/
-    }
+}
 }
 
 /*-------------------------------------------------------------------*/
@@ -947,9 +947,8 @@ body {
     background-color: #e91e63;
     color: white;
     border: none;
-        padding: 14px 35px;
-        font-size: 20px;
-    
+    padding: 14px 35px;
+    font-size: 20px;
 }
 
     .btn-contato:hover {
@@ -1392,4 +1391,254 @@ body {
     .navbar-toggler {
         border-color: #C42457;
     }
+}
+
+/* RESPONSIVIDADE - PÁGINA INICIAL */
+
+.pagina-inicial {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.banner-principal {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.botao-contato-inicial {
+    margin: 25px 0;
+}
+
+    .botao-contato-inicial .btn-contato {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+.banners-informativos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+    .banners-informativos img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+/* Tablets e celulares */
+@media (max-width: 767px) {
+
+    .pagina-inicial {
+        padding: 10px !important;
+    }
+
+    .botao-contato-inicial {
+        margin: 20px 0;
+    }
+
+    .banners-informativos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+        .banners-informativos img {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+}
+
+
+
+/* SOLICITAÇÕES DO ADM - CELULAR */
+
+@media (max-width: 767px) {
+
+    .pagina-pendencias {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 15px auto !important;
+        box-sizing: border-box;
+    }
+
+        .pagina-pendencias h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 25px !important;
+        }
+
+    .tabela-pendencias {
+        width: 100%;
+    }
+
+        .tabela-pendencias table,
+        .tabela-pendencias tbody,
+        .tabela-pendencias tr,
+        .tabela-pendencias td {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .tabela-pendencias table {
+            border: none;
+        }
+
+        .tabela-pendencias thead {
+            display: none;
+        }
+
+        .tabela-pendencias tr {
+            background-color: #EFB0BB;
+            border: 1px solid #DC4D73;
+            border-radius: 14px;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .tabela-pendencias td {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 11px 4px;
+            border: none;
+            border-bottom: 1px solid rgba(143, 23, 61, 0.2);
+            overflow-wrap: anywhere;
+            background: transparent;
+        }
+
+            .tabela-pendencias td::before {
+                content: attr(data-label);
+                color: #8F173D;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .tabela-pendencias td:last-child {
+                border-bottom: none;
+                padding-top: 15px;
+            }
+
+    .acoes-pendencia {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+        .acoes-pendencia form {
+            width: 100%;
+            margin: 0;
+        }
+
+        .acoes-pendencia a,
+        .acoes-pendencia button {
+            width: 100%;
+            padding: 9px;
+        }
+}
+
+
+/* GERENCIAR PETS - CARTÕES NO CELULAR */
+
+@media (max-width: 767px) {
+
+    .pagina-gerenciar-pets {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        margin: 15px auto !important;
+        box-sizing: border-box;
+    }
+
+        .pagina-gerenciar-pets h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    .tabela-gerenciar-pets {
+        width: 100%;
+        overflow: visible;
+    }
+
+        .tabela-gerenciar-pets table,
+        .tabela-gerenciar-pets tbody,
+        .tabela-gerenciar-pets tr,
+        .tabela-gerenciar-pets td {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .tabela-gerenciar-pets table {
+            border: none;
+            margin-bottom: 0;
+        }
+
+        .tabela-gerenciar-pets thead {
+            display: none;
+        }
+
+        .tabela-gerenciar-pets tr {
+            background-color: #EFB0BB;
+            border: 1px solid #DC4D73;
+            border-radius: 14px;
+            padding: 15px;
+            margin-bottom: 18px;
+            overflow: hidden;
+        }
+
+        .tabela-gerenciar-pets td {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 10px 5px;
+            border: none;
+            border-bottom: 1px solid rgba(143, 23, 61, 0.2);
+            background: transparent;
+            overflow-wrap: anywhere;
+        }
+
+            .tabela-gerenciar-pets td::before {
+                content: attr(data-label);
+                color: #8F173D;
+                font-weight: bold;
+                font-size: 14px;
+            }
+
+            .tabela-gerenciar-pets td:first-child {
+                align-items: center;
+            }
+
+    .foto-gerenciar-pet {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .tabela-gerenciar-pets td:last-child {
+        border-bottom: none;
+        padding-top: 15px;
+    }
+
+    .acoes-gerenciar-pets {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        width: 100%;
+    }
+
+        .acoes-gerenciar-pets a {
+            width: 100%;
+            text-align: center;
+            padding: 9px;
+        }
 }

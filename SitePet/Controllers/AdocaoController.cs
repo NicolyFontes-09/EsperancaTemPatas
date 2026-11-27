@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using SitePet.Models;
 using SitePet.Data;
 
@@ -27,9 +28,17 @@ namespace SitePet.Controllers
         [HttpPost]
         public IActionResult Cadastrar(Adocao adocao)
         {
+            if (!adocao.AceitouTermos)
+            {
+                ModelState.AddModelError(
+                    nameof(adocao.AceitouTermos),
+                    "É necessário aceitar os termos de adoção."
+                );
+            }
+
             if (!ModelState.IsValid)
             {
-                return View("~/Views/Adocao/Formulario.cshtml", adocao);
+                return View("~/Views/Adocao/Termos.cshtml", adocao);
             }
 
             adocao.Id = AdocaoMocados.Solicitacoes.Count == 0
@@ -131,8 +140,7 @@ namespace SitePet.Controllers
 
         public IActionResult MinhasAdocoes()
         {
-            // Temporariamente sem Identity.
-            return View(new List<Adocao>());
+            return View(AdocaoMocados.Solicitacoes);
         }
     }
 }

@@ -28,8 +28,8 @@ namespace SitePet.Models
         [Range(18, 120, ErrorMessage = "A idade deve ser igual ou superior a 18 anos.")]
         public int Idade { get; set; }
 
-        [Required(ErrorMessage = "É necessário aceitar os termos de adoção.")]
-        public bool AceitouTermos { get; set; }
+        
+        
 
         // Endereço completo
         [Required]
@@ -58,5 +58,8 @@ namespace SitePet.Models
         public string Status { get; set; } = "Pendente";
 
         public string? Justificativa { get; set; }
+
+        [Required(ErrorMessage = "É necessário aceitar os termos de adoção.")]
+        public bool AceitouTermos { get; set; }
     }
 }

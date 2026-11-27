@@ -1,4 +1,16 @@
 ﻿
+@{
+    var controllerAtual = ViewContext.RouteData.Values["controller"]?.ToString();
+    var actionAtual = ViewContext.RouteData.Values["action"]?.ToString();
+
+    var estaNaAreaAdmin =
+        (controllerAtual == "Pet" &&
+         new[] { "Index", "Cadastrar", "Editar", "Excluir", "ConfirmarExclusao" }.Contains(actionAtual))
+        ||
+        (controllerAtual == "Adocao" &&
+         new[] { "Pendencia", "Detalhes", "Rejeitar" }.Contains(actionAtual));
+}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SitePet</title>
     <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> 
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SitePet.styles.css" asp-append-version="true" />
 </head>
@@ -17,9 +29,9 @@
 
                 <a class="navbar-brand"
                    asp-area=""
-                   asp-controller="@(User.IsInRole("Admin") ? "Pet" : "Home")"
+                   asp-controller="@(estaNaAreaAdmin ? "Pet" : "Home")"
                    asp-action="Index">
-                    <img class="logo-nav" src="~/img/logo-site.png" />
+                    <img class="logo-nav" src="~/img/logo-site.png" alt="Esperança Tem Patas" />
                 </a>
 
                 <button class="navbar-toggler" type="button"
@@ -35,13 +47,21 @@
 
                     <ul class="navbar-nav flex-grow-1">
 
-                        @if (User.IsInRole("Admin"))
+                        @if (estaNaAreaAdmin)
                         {
                             <li class="nav-item">
                                 <a class="nav-link fs-5 fw-bold menu-item"
                                    asp-controller="Pet"
                                    asp-action="Index">
                                     Gerenciar Pets
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-bold menu-item"
+                                   asp-controller="Adocao"
+                                   asp-action="Pendencia">
+                                    Solicitações de Adoção
                                 </a>
                             </li>
                         }
@@ -71,16 +91,13 @@
                                 </a>
                             </li>
 
-                            @if (User.Identity != null && User.Identity.IsAuthenticated)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link fs-5 fw-bold menu-item"
-                                       asp-controller="Adocao"
-                                       asp-action="MinhasAdocoes">
-                                        Minhas Adoções
-                                    </a>
-                                </li>
-                            }
+                            <li class="nav-item">
+                                <a class="nav-link fs-5 fw-bold menu-item"
+                                   asp-controller="Adocao"
+                                   asp-action="MinhasAdocoes">
+                                    Minhas Adoções
+                                </a>
+                            </li>
                         }
 
                     </ul>

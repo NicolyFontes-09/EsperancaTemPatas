@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Cadastrar Pet";
 }
 
@@ -7,6 +6,13 @@
     <div class="caixa-pet">
 
         <h1>Cadastrar Pet</h1>
+
+        @if (ViewBag.ErroCadastro != null)
+        {
+            <div class="alert alert-danger">
+                @ViewBag.ErroCadastro
+            </div>
+        }
 
         <form class="formulario-pet"
               asp-controller="Pet"
@@ -62,7 +68,8 @@
                     <input type="number"
                            id="Idade"
                            name="Idade"
-                           min="0"
+                           min="1"
+                           max="30"
                            step="1"
                            required />
                 </div>
@@ -108,11 +115,11 @@
                 </div>
 
                 <div class="campo-pet">
-                    <label for="Foto">Adicionar imagem do pet</label>
+                    <label for="Foto">Adicionar imagem do Pet</label>
                     <input type="file"
                            id="Foto"
                            name="Foto"
-                           accept="image/*" />
+                           accept="image/jpeg,image/png" />
                 </div>
 
                 <div class="campo-pet">

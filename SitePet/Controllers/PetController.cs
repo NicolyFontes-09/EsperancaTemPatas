@@ -1,23 +1,67 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SitePet.Data;
 using SitePet.Models;
+using SitePet.Services;
 
 namespace SitePet.Controllers
 {
     public class PetController : Controller
     {
-        // Lista todos os pets para gerenciamento
-        public IActionResult Index()
+        private readonly ApiService _apiService;
+
+        public PetController(ApiService apiService)
         {
-            return View(PetMocados.Pets);
+            _apiService = apiService;
         }
 
-        // Exibe os detalhes de um pet
-        public IActionResult Detalhes(int id)
+        // Busca os Pets da API
+        private async Task<List<Pet>> BuscarPets()
         {
-            var pet = PetMocados.Pets
-                .FirstOrDefault(p => p.Id == id);
+            var petsApi = await _apiService.BuscarPetsAsync();
+
+            var pets = new List<Pet>();
+
+            int contador = 1;
+
+            foreach (var petApi in petsApi)
+            {
+                pets.Add(new Pet
+                {
+                    Id = contador,
+                    ApiId = petApi.Id,
+                    Nome = petApi.Nome,
+                    Especie = petApi.Especie,
+                    Raca = petApi.Raca,
+                    Sexo = petApi.Sexo,
+                    Idade = petApi.Idade,
+                    Porte = petApi.Porte,
+                    Vacinas = petApi.Vacina,
+                    Castrado = petApi.Castrado == "Sim",
+                    Localizacao = petApi.Localização,
+                    Descricao = petApi.Descrição,
+                    Foto = string.Empty
+                });
+
+                contador++;
+            }
+
+            return pets;
+        }
+
+        // Lista todos os Pets
+        public async Task<IActionResult> Index()
+        {
+            var pets = await BuscarPets();
+
+            return View(pets);
+        }
+
+        // Detalhes do Pet
+        public async Task<IActionResult> Detalhes(int id)
+        {
+            var pets = await BuscarPets();
+
+            var pet = pets.FirstOrDefault(p => p.Id == id);
 
             if (pet == null)
             {
@@ -27,27 +71,53 @@ namespace SitePet.Controllers
             return View(pet);
         }
 
-        // Abre a página de cadastro
+        // Abre cadastro
         [HttpGet]
         public IActionResult Cadastrar()
         {
             return View();
         }
 
-        // Recebe e salva o cadastro do pet
+        // Cadastra Pet na API
         [HttpPost]
-        public IActionResult Cadastrar(Pet pet)
+        public async Task<IActionResult> Cadastrar(
+            Pet pet,
+            IFormFile? Foto)
         {
-            pet.Id = PetMocados.Pets.Any()
-                ? PetMocados.Pets.Max(p => p.Id) + 1
-                : 1;
+            if (!ModelState.IsValid)
+            {
+                return View(pet);
+            }
 
-            PetMocados.Pets.Add(pet);
+            try
+            {
+                var resposta = await _apiService.CadastrarPetAsync(
+                    pet,
+                    Foto
+                );
 
-            return RedirectToAction("Index");
+                if (resposta.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+
+                var erro = await resposta.Content.ReadAsStringAsync();
+
+                ViewBag.ErroCadastro =
+                    "Não foi possível cadastrar o Pet na API. " + erro;
+
+                return View(pet);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErroCadastro =
+                    "Erro ao conectar com a API: " + ex.Message;
+
+                return View(pet);
+            }
         }
 
-        // Abre a página de edição
+        // Abre edição
         [HttpGet]
         public IActionResult Editar(int id)
         {
@@ -62,7 +132,7 @@ namespace SitePet.Controllers
             return View(pet);
         }
 
-        // Recebe e salva as alterações
+        // Salva edição (ainda usando mocados)
         [HttpPost]
         public IActionResult Editar(Pet pet)
         {
@@ -89,7 +159,7 @@ namespace SitePet.Controllers
             return RedirectToAction("Index");
         }
 
-        // Abre a página de confirmação de exclusão
+        // Abre exclusão
         [HttpGet]
         public IActionResult Excluir(int id)
         {
@@ -104,7 +174,7 @@ namespace SitePet.Controllers
             return View(pet);
         }
 
-        // Confirma e executa a exclusão
+        // Exclui (ainda usando mocados)
         [HttpPost]
         public IActionResult ConfirmarExclusao(int id)
         {
@@ -121,25 +191,28 @@ namespace SitePet.Controllers
             return RedirectToAction("Index");
         }
 
-        // Lista somente os gatos
-        public IActionResult Gatos()
+        // Lista gatos
+        public async Task<IActionResult> Gatos()
         {
-            var pets = PetMocados.Pets
+            var pets = await BuscarPets();
+
+            var gatos = pets
                 .Where(p => p.Especie == "Gato")
                 .ToList();
 
-            return View(pets);
+            return View(gatos);
         }
 
-        // Lista somente os cachorros
-        public IActionResult Cachorros()
+        // Lista cachorros
+        public async Task<IActionResult> Cachorros()
         {
-            var pets = PetMocados.Pets
+            var pets = await BuscarPets();
+
+            var cachorros = pets
                 .Where(p => p.Especie == "Cachorro")
                 .ToList();
 
-            return View(pets);
+            return View(cachorros);
         }
     }
 }
-    

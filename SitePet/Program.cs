@@ -5,29 +5,32 @@ using SitePet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+// Conexão com o banco de dados
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
+    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+// Configuração do Identity
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
     options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+// Controllers e Views
+builder.Services.AddControllersWithViews();
+
+// Configuração para conectar com a API
 builder.Services.AddHttpClient<ApiService>(client =>
 {
-    client.BaseAddress = new Uri(
-        builder.Configuration["ApiBaseUrl"]
-    );
+    client.BaseAddress = new Uri("https://localhost:7122/");
 });
-builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configuração do ambiente
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();

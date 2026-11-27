@@ -1060,3 +1060,307 @@ body {
         color: white;
     }
 
+
+
+
+/* =====================================================
+   RESPONSIVIDADE - ESPERANÇA TEM PATAS
+   ===================================================== */
+
+/* Tablets e telas médias */
+@media (max-width: 991px) {
+
+    /* Cadastro e edição de pets */
+    .formulario-pet {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Detalhes do animal */
+    .conteudo-detalhes {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .descricao-detalhes {
+        grid-column: 1 / -1;
+    }
+
+    .imagem-detalhes img {
+        height: 320px;
+    }
+
+    /* Textos */
+    .texto-quem-somos {
+        font-size: 19px;
+    }
+
+    .termos-introducao,
+    .termos-declaracao {
+        font-size: 18px;
+    }
+
+    .lista-termos li {
+        font-size: 17px;
+    }
+}
+
+
+/* Celulares */
+@media (max-width: 767px) {
+
+    /* Menu */
+    .logo-nav {
+        height: 70px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px !important;
+        padding: 10px 8px;
+    }
+
+    /* Espaçamento geral */
+    .container {
+        max-width: 100%;
+    }
+
+    /* Quero adotar */
+    .pagina-adotar {
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .titulo-adotar {
+        margin-bottom: 20px;
+    }
+
+    .frase-adotar {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .cartao-adotar {
+        padding: 20px 15px;
+    }
+
+    .imagem-adotar {
+        width: 90%;
+        height: 170px;
+    }
+
+    /* Quem somos */
+    .caixa-quem-somos {
+        padding: 20px;
+        margin: 15px 0 25px;
+    }
+
+    .texto-quem-somos {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    /* Termos de adoção */
+    .termos-adocao {
+        padding: 22px 18px;
+        margin-top: 15px;
+    }
+
+    .termos-titulo {
+        font-size: 28px;
+    }
+
+    .termos-introducao,
+    .termos-declaracao {
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .lista-termos {
+        padding-left: 22px;
+    }
+
+        .lista-termos li {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+    .tassinatura {
+        width: 190px;
+        max-width: 100%;
+    }
+
+    .termos-acoes {
+        grid-template-columns: 1fr;
+    }
+
+    /* Cadastro e edição de pets */
+    .pagina-pet {
+        padding: 20px 10px;
+    }
+
+    .caixa-pet {
+        padding: 20px 15px;
+    }
+
+        .caixa-pet h1 {
+            font-size: 28px;
+        }
+
+    .formulario-pet {
+        grid-template-columns: 1fr;
+    }
+
+    .painel-foto-pet,
+    .painel-informacoes-pet {
+        padding: 17px;
+    }
+
+    .botoes-pet .botao-pet,
+    .botoes-pet .botao-cancelar-pet {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    /* Lista de gatos e cachorros */
+    .pagina-animais {
+        padding-top: 15px;
+    }
+
+    .cabecalho-animais p {
+        font-size: 17px;
+    }
+
+    .foto-animal {
+        height: 200px;
+    }
+
+    /* Detalhes do animal */
+    .pagina-detalhes {
+        padding-top: 15px;
+    }
+
+    .cartao-detalhes {
+        padding: 18px;
+    }
+
+    .titulo-detalhes {
+        font-size: 28px;
+    }
+
+    .conteudo-detalhes {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .descricao-detalhes {
+        grid-column: auto;
+    }
+
+    .imagem-detalhes img {
+        height: 260px;
+        object-fit: contain;
+    }
+
+    .informacoes-detalhes p,
+    .descricao-detalhes p {
+        font-size: 16px;
+    }
+
+    .acoes-detalhes {
+        flex-direction: column;
+    }
+
+    /* Exclusão de pets */
+    .botao-confirmar-exclusao,
+    .botao-cancelar-exclusao {
+        width: 100%;
+    }
+
+    .botoes-excluir {
+        flex-direction: column;
+    }
+
+    /* Formulário de adoção */
+    .pagina-adocao {
+        padding: 10px;
+        margin: 15px auto;
+    }
+
+    .cartao-adocao {
+        padding: 20px 15px;
+    }
+
+        .cartao-adocao h1 {
+            font-size: 27px;
+        }
+
+    .texto-adocao {
+        font-size: 16px;
+    }
+
+    .dados-pet,
+    .dados-adotante,
+    .endereco-adotante {
+        padding: 17px;
+    }
+
+    .acoes-formulario {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .botao-enviar,
+    .botao-cancelar {
+        width: 100%;
+    }
+
+    /* Minhas adoções */
+    .cartao-minha-adocao {
+        padding: 18px;
+    }
+
+    /* Textos e botões */
+    .texto {
+        font-size: 18px;
+    }
+
+    .btn-contato {
+        width: 100%;
+        font-size: 17px;
+    }
+}
+
+
+/* Celulares pequenos */
+@media (max-width: 400px) {
+
+    .logo-nav {
+        height: 58px;
+    }
+
+    .titulo-detalhes,
+    .termos-titulo {
+        font-size: 24px;
+    }
+
+    .cartao-adocao h1 {
+        font-size: 24px;
+    }
+
+    .cartao-detalhes {
+        padding: 13px;
+    }
+
+    .caixa-pet {
+        padding: 15px 10px;
+    }
+
+    .botao-adotar,
+    .botao-animal {
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 16px;
+    }
+}
